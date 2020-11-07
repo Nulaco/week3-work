@@ -1,0 +1,474 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*字型區*/
+.ff-noto, h1, h2{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/*字型大小*/
+h1{
+    font-size: 64px;
+    line-height: 96px;
+}
+h2{
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+}
+h3{
+    font-size: 48px;
+    line-height: 95px;
+}
+h4{
+    font-size: 42px;
+    line-height: 63px;
+}
+h5{
+    font-size: 32px;
+    line-height: 63px;
+}
+h6{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.fs-1{
+    font-size: 14px;
+}
+.fs-2{
+    font-size: 16px;
+}
+.fs-3{
+    font-size: 20px;
+}
+.fs-4{
+    font-size: 28px;
+}
+.fs-5{
+    font-size: 36px;
+}
+.fs-6{
+    font-size: 72px;
+}
+
+/*行高*/
+.lh-1{
+    line-height: 20px;
+}
+.lh-2{
+    line-height: 21px;
+}
+.lh-3{
+    line-height: 24px;
+}
+.lh-4{
+    line-height: 28px;
+}
+.lh-5{
+    line-height: 30px;
+}
+.lh-6{
+    line-height: 32px;
+}
+.lh-7{
+    line-height: 36px;
+}
+.lh-8{
+    line-height: 48px;
+}
+.lh-9{
+    line-height: 54px;
+}
+.lh-10{
+    line-height: 63px;
+}
+.lh-11{
+    line-height: 72px;
+}
+.lh-12{
+    line-height: 80px;
+}
+.lh-13{
+    line-height: 96px;
+}
+.lh-14{
+    line-height: 108px;
+}
+
+
+/*大範圍*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    display: block;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*其他*/
+.txt-c{
+    text-align: center;
+}
+.fw-b{
+    font-weight: bold;
+}
+
+/*頁首*/
+header{
+    background-image: url(/images/menu-sm.png)
+}
+.menu{
+    background-color: #AA0601;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 88px;
+}
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu li a{
+    display: block;
+    padding-left: 64px;
+}
+.menu li a:hover{
+    color: wheat;
+}
+
+/*頁尾*/
+footer{
+    background-color:#AA0601;
+    color: white;
+}
+.f-menu, .f-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li{
+    padding-right: 48px;
+}
+footer a:hover{
+    color: wheat;
+}
+.icon li{
+    padding-left: 32px;
+}
+.footer-top{
+    padding-bottom: 18px;
+    border-bottom: white solid 1px;
+}
+.f-contact p{
+    font-size: 36px;
+    line-height: 54px;
+}
+.f-contact img{
+    width: 44px;
+    padding-right: 16px;
+}
+.logo{
+    padding-right: 36px;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+}
+.copyright ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright :nth-child(2){
+    display: flex;
+    align-items: center;
+}
+
+/* 首頁 index*/
+.joint{
+    background-image: url(/images/bg.png);
+    background-position: center center;
+}
+.joint-bg1{
+    background-image: url(/images/product-8.png);
+}
+.joint-bg2{
+    background-image: url(/images/product-9.png);
+}
+.joint-bg1,.joint-bg2{
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* 常見問題 Q&A*/
+.billboard2{
+    height: 304px;
+    background-image: url(/images/qa.png);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: flex-end;
+}
+.billboard2 p{
+    font-size: 64px;
+    line-height: 80px;
+    padding-right: 24px;
+}
+.answer{
+    padding-left: 96px;
+}
+
+/*Flex*/
+.flex-ac{
+    display: flex;
+    align-items: center;
+}
+
+/*間距*/
+.pt-1{
+    padding-top: 16px;
+}
+.pt-2{
+    padding-top: 24px;
+}
+.pt-3{
+    padding-top: 36px;
+}
+.pt-4{
+    padding-top: 48px;
+}
+.pt-5{
+    padding-top: 64px;
+}
+
+.pb-1{
+    padding-bottom: 24px;
+}
+.pb-2{
+    padding-bottom: 40px;
+}
+.pb-3{
+    padding-bottom: 60px;
+}
+.pb-4{
+    padding-bottom: 64px;
+}
+.pb-5{
+    padding-bottom: 80px;
+}
+
+.pr-2{
+    padding-right: 62px;
+}
+
+/*ipad螢幕 */
+@media(max-width:768px){
+    /*頁首頁尾*/
+    .container{
+        max-width: 688px;
+    }
+    .menu{
+        padding: 40px;
+    }
+    .menu li a{
+        padding-left: 40px;
+    }
+    nav li{
+        padding-right: 40px;
+    }
+    .icon li{
+        padding-left: 24px;
+    }
+    .icon img{
+        width: 24px;
+    }
+    .f-contact{
+        padding: 0;
+    }
+    .f-contact p{
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .f-contact img{
+        width: 24px;
+        padding-right: 10px;
+    }
+    .logo{
+        display: none;
+    }
+    .pb-1{
+        padding-bottom: 15px;
+    }
+    .pt-4{
+        padding-top: 40px;
+    }
+    .pr-2{
+        padding-right: 24px;
+    }
+
+    /*Q&A*/
+    .billboard2 img{
+        width: 48px;
+    }
+    .billboard2 p{
+        font-size: 48px;
+        padding-right: 16px;
+    }
+    .answer{
+        padding-left: 60px;
+    }
+    .pb-5{
+        padding-bottom: 40px;
+    }
+}
+
+/*手機螢幕*/
+@media(max-width:375px){
+    /*頁首頁尾*/
+    .container{
+        max-width: 340px;
+    }
+    .menu{
+        display: block;
+        padding:0 ;
+    }
+    .menu img{
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    .menu ul{
+        width: 100%;  
+        flex-wrap: wrap;
+    }
+    .menu li{
+        width: 50%;
+    }
+    .menu li a{
+        width: 100%;
+        padding: 0;
+        border: solid white 1px;
+    }
+    nav{
+        display: none;
+    }
+    .footer-top{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .f-contact{
+        padding:0;
+    }
+    .f-contact p{
+        font-size: 16px;
+    }
+    .f-contact img{
+        width: 16px;
+    }
+    .copyright{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 24px;
+    }
+    .copyright ul, .copyright :nth-child(2){
+        display: block;
+    }
+    .logo{
+        display: block;
+        padding-right: 0;
+    }
+    .logo img, .menu img{
+        width: 46px;
+    }    
+    .pb-1{
+        padding-bottom: 0px;
+    }
+
+    /*Q&A*/
+    .billboard2 img{
+        width: 24px;
+    }
+    .billboard2 p{
+        font-size: 28px;
+        padding-right: 8px;
+    }
+    .answer{
+        padding-left: 0px;
+    }
+    h5{
+        font-size: 20px;
+        line-height: 63px;
+    }
+    .fs-2{
+        font-size: 14px;
+    }
+    .pt-1{
+        padding-top: 8px;
+    }
+    .pt-3{
+        padding-top: 12px;
+    }
+    .pb-2{
+        padding-bottom: 20px;
+    }
+    .pb-5{
+        padding-bottom: 24px;
+    }
+}
